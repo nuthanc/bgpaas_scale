@@ -1,0 +1,119 @@
+{
+    "cluster": [
+        {
+            "id": "test-cluster",
+            "parameters": {
+                "provision": {
+                    "contrail_4": {
+                        "controller_config": {
+                            "bgp_asn": "64512",
+                            "external_routers_list": {}
+                        },
+                        "kernel_upgrade": false
+                    },
+                    "openstack": {
+                        "openstack_manage_amqp": true
+                    }
+                }
+            }
+        }
+    ],
+    "image": [
+        {
+            "category": "package",
+            "id": "image_contrail_cloud_package_4_1_2_0_13_mitaka_trusty",
+            "parameters": {
+                "contrail-container-package": true
+            },
+            "path": "/root/contrail-cloud-docker_4.1.2.0-13-mitaka_trusty.tgz",
+            "type": "contrail-ubuntu-package",
+            "version": "4.1.2.0-13-mitaka_trusty"
+        }
+    ],
+    "server": [
+        {
+            "cluster_id": "test-cluster",
+            "domain": "contrail.juniper.net",
+            "id": "5b4s6",
+            "network": {
+                "interfaces": [
+                    {
+                        "default_gateway": "10.87.64.254",
+                        "ip_address": "5.5.5.131/24",
+                        "mac_address": "04:7d:7b:a5:86:82",
+                        "name": "bond0"
+                    }
+                ],
+                "management_interface": "bond0",
+                "provisioning": "kickstart"
+            },
+            "parameters": {
+                "provision": {
+                    "contrail": {},
+                    "contrail_4": {}
+                }
+            },
+            "password": "c0ntrail123",
+            "roles": [
+                "contrail-compute"
+            ]
+        },
+        {
+            "cluster_id": "test-cluster",
+            "domain": "contrail.juniper.net",
+            "id": "5b4s4",
+            "network": {
+                "interfaces": [
+                    {
+                        "default_gateway": "10.87.64.254",
+                        "ip_address": "5.5.5.130/24",
+                        "mac_address": "90:e2:ba:b8:51:1c",
+                        "name": "bond0"
+                    }
+                ],
+                "management_interface": "bond0",
+                "provisioning": "kickstart"
+            },
+            "parameters": {
+                "provision": {
+                    "contrail": {},
+                    "contrail_4": {}
+                }
+            },
+            "password": "c0ntrail123",
+            "roles": [
+                "contrail-compute"
+            ]
+        },
+        {
+            "cluster_id": "test-cluster",
+            "domain": "englab.juniper.net",
+            "id": "5b4s2",
+            "network": {
+                "interfaces": [
+                    {
+                        "default_gateway": "10.87.64.254",
+                        "ip_address": "5.5.5.129/24",
+                        "mac_address": "04:7d:7b:a5:84:6e",
+                        "name": "bond0"
+                    }
+                ],
+                "management_interface": "bond0",
+                "provisioning": "kickstart"
+            },
+            "parameters": {
+                "provision": {
+                    "contrail": {},
+                    "contrail_4": {}
+                }
+            },
+            "password": "c0ntrail123",
+            "roles": [
+                "contrail-analytics",
+                "contrail-controller",
+                "openstack",
+                "contrail-analyticsdb"
+            ]
+        }
+    ]
+}

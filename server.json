@@ -1,0 +1,88 @@
+{
+    "server": [
+        {
+            "cluster_id": "test-cluster",
+            "domain": "contrail.juniper.net",
+            "id": "5b4s6",
+            "network": {
+                "interfaces": [
+                    {
+                        "default_gateway": "10.87.64.254",
+                        "ip_address": "5.5.5.131/24",
+                        "mac_address": "04:7d:7b:a5:86:82",
+                        "name": "bond0"
+                    }
+                ],
+                "management_interface": "bond0",
+                "provisioning": "kickstart"
+            },
+            "parameters": {
+                "provision": {
+                    "contrail": {},
+                    "contrail_4": {}
+                }
+            },
+            "password": "c0ntrail123",
+            "roles": [
+                "contrail-compute"
+            ]
+        },
+        {
+            "cluster_id": "test-cluster",
+            "domain": "contrail.juniper.net",
+            "id": "5b4s4",
+            "network": {
+                "interfaces": [
+                    {
+                        "default_gateway": "10.87.64.254",
+                        "ip_address": "5.5.5.130/24",
+                        "mac_address": "90:e2:ba:b8:51:1c",
+                        "name": "bond0"
+                    }
+                ],
+                "management_interface": "bond0",
+                "provisioning": "kickstart"
+            },
+            "parameters": {
+                "provision": {
+                    "contrail": {},
+                    "contrail_4": {}
+                }
+            },
+            "password": "c0ntrail123",
+            "roles": [
+                "contrail-compute"
+            ]
+        },
+        {
+            "cluster_id": "test-cluster",
+            "domain": "englab.juniper.net",
+            "id": "5b4s2",
+            "network": {
+                "interfaces": [
+                    {
+                        "default_gateway": "10.87.64.254",
+                        "ip_address": "5.5.5.129/24",
+                        "mac_address": "04:7d:7b:a5:84:6e",
+                        "name": "bond0"
+                    }
+                ],
+                "management_interface": "bond0",
+                "provisioning": "kickstart"
+            },
+            "parameters": {
+                "provision": {
+                    "contrail": {},
+                    "contrail_4": {}
+                }
+            },
+            "password": "c0ntrail123",
+            "roles": [
+                "contrail-analytics",
+                "contrail-controller",
+                "openstack",
+                "contrail-analyticsdb"
+            ]
+        }
+    ]
+}

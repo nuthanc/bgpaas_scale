@@ -1,0 +1,21 @@
+{
+    "cluster": [
+        {
+            "id": "test-cluster",
+            "parameters": {
+                "provision": {
+                    "contrail_4": {
+                        "controller_config": {
+                            "bgp_asn": "64512",
+                            "external_routers_list": {}
+                        },
+                        "kernel_upgrade": false
+                    },
+                    "openstack": {
+                        "openstack_manage_amqp": true
+                    }
+                }
+            }
+        }
+    ]
+}
